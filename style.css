@@ -1,0 +1,72 @@
+* {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 700;
+    font-size: 12px;
+    color: #e0def4;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0;
+    margin: 0;
+    padding: 6px 12px;
+}
+
+/* ================= WORKSPACES ================= */
+
+#workspaces button {
+    padding: 3px 5px; /* narrower buttons */
+    margin: 0 2px; /* closer together */
+    border-radius: 0;
+    background: transparent;
+    color: #e0def4;
+}
+
+/* active workspace */
+#workspaces button.active {
+    background: #3b4f76; /* soft blue highlight */
+    border: 2px solid #6fd9ff; /* blue outline */
+}
+
+/* hover */
+#workspaces button:hover {
+    background: #1e1e1e;
+}
+
+/* urgent */
+#workspaces button.urgent {
+    background: #3a1f2e;
+}
+
+/* ================= CENTER MUSIC ================= */
+
+#mpris {
+    font-weight: 700;
+}
+
+/* ================= RIGHT SIDE STATES ================= */
+
+#battery.warning {
+    background: rgba(246, 193, 119, 0.15);
+    padding: 2px 6px;
+}
+
+#battery.critical {
+    background: rgba(235, 111, 146, 0.18);
+    padding: 2px 6px;
+}
+
+#wireplumber.muted {
+    opacity: 0.6;
+}
+
+/* ================= TOOLTIP ================= */
+
+tooltip {
+    background: #111111;
+    border: 1px solid #333333;
+}
+
+tooltip label {
+    color: #e0def4;
+}
